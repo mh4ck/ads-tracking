@@ -20,7 +20,7 @@ nightmare
       html: document.documentElement.innerHTML
     }
   })
-  .end()
+  //.end()
   .then((ret) => {
     fs.writeFileSync("pagelog." + shortid.generate() + ".json", JSON.stringify(ret), "utf8");
   })
